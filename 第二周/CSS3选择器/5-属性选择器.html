@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+        img {
+            width: 220px;
+        }
+
+        /*[alt] 有这个属性
+          [alt = "北京故宫"] 精确匹配
+          [alt ^="abc"] 开头匹配
+          [alt $="abc"] 结尾匹配
+          [alt *="abc"] 任意位置匹配
+          [alt |="abc"] abc-开头
+          [alt ~="abc"] abc为空格分开的独立部分
+        */
+        img[alt |='参赛作品'] {
+            border: 3px solid deepskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../素材/images/gugong.jpg" alt="参赛作品-北京故宫">
+    <img src="../素材/images/beijing/1.jpg" alt="北京鸟巢国家体育场夜景">
+    <img src="../素材/images/beijing/2.jpg" alt="北京十七孔桥 手机拍摄">
+
+    <img src="../素材/images/wuxi/1.jpg" alt="参赛作品-无锡体育场">
+    <img src="../素材/images/wuxi/2.jpg" alt="无锡太湖 手机拍摄">
+    <img src="../素材/images/wuxi/3.jpg" alt="无锡xx 手机拍摄">
+    <img src="../素材/images/wuxi/4.jpg" alt="参赛作品-无锡夜景">
+</body>
+
+</html>
