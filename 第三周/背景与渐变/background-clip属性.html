@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-clip属性</title>
+    <style>
+        div {
+            border: 10px dotted #000;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 150px;
+            background-image: url(../素材/images/gugong.jpg);
+            background-size: 100% 100%;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-image: url(../素材/images/gugong.jpg);
+            /*背景裁切padding区域，此时不会再在点状线、虚线边框地下渲染*/
+            background-clip: padding-box;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 150px;
+            background-image: url(../素材/images/gugong.jpg);
+            /*背景裁切到内容区域*/
+            background-clip: content-box;
+            background-size: 100px auto;
+            /*背景起源*/
+            background-origin: content;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

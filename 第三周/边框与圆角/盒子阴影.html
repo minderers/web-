@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子阴影</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border: 1px solid #000;
+            display: inline-block;
+        }
+
+        .box1 {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+            margin-bottom: 10px;
+        }
+
+        .box2 {
+            box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, .4);
+            margin-bottom: 10px;
+        }
+
+        .box3 {
+            box-shadow: inset 0px 0px 10px orange;
+            margin-bottom: 10px;
+        }
+
+        .box4 {
+            box-shadow: 2px 2px 30px purple,
+                4px 4px 40px orange,
+                6px 6px 50px dodgerblue, inset 0px 0px 6px orange;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+
+</html>

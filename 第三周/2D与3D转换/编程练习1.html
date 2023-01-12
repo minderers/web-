@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*背景*/
+        .box {
+            background-color: red;
+            width: 300px;
+            height: 200px;
+            position: relative;
+        }
+
+        /*大五角星*/
+        .box1 {
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            border-right: 28px solid transparent;
+            border-left: 28px solid transparent;
+            border-top: 20px solid yellow;
+        }
+
+        .box1::before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-right: 28px solid transparent;
+            border-left: 28px solid transparent;
+            border-top: 20px solid yellow;
+            top: -20px;
+            left: -28px;
+            transform: rotate(72deg);
+            transform-origin: 28px 9px;
+        }
+
+        .box1::after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-right: 28px solid transparent;
+            border-left: 28px solid transparent;
+            border-top: 20px solid yellow;
+            top: -20px;
+            left: -28px;
+            transform: rotate(-72deg);
+            transform-origin: 28px 9px;
+        }
+
+        /*小五角星*/
+        .small {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-right: 9px solid transparent;
+            border-left: 9px solid transparent;
+            border-top: 7px solid yellow;
+            transform-origin: 28px 9px;
+        }
+
+        .small::before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-right: 9px solid transparent;
+            border-left: 9px solid transparent;
+            border-top: 7px solid yellow;
+            top: -7px;
+            left: -9px;
+            transform: rotate(72deg);
+            transform-origin: 9px 3px;
+        }
+
+        .small::after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-right: 9px solid transparent;
+            border-left: 9px solid transparent;
+            border-top: 7px solid yellow;
+            top: -7px;
+            left: -9px;
+            transform: rotate(-72deg);
+            transform-origin: 9px 3px;
+        }
+
+        .box2 {
+            top: 17px;
+            left: 90px;
+            transform: rotate(-48deg);
+        }
+
+        .box3 {
+            top: 37px;
+            left: 110px;
+            transform: rotate(-26deg);
+        }
+
+        .box4 {
+            top: 67px;
+            left: 110px;
+            transform: rotate(-2deg);
+        }
+
+        .box5 {
+            top: 87px;
+            left: 90px;
+            transform: rotate(20deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="small box2"></div>
+        <div class="small box3"></div>
+        <div class="small box4"></div>
+        <div class="small box5"></div>
+    </div>
+</body>
+
+</html>

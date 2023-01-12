@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空间移动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #333;
+            background-color: orange;
+        }
+
+        .box1 {
+            width: 202px;
+            height: 202px;
+            border: 1px solid #333;
+            margin: 50px auto;
+            perspective: 300px;
+        }
+
+        .box1 p {
+            transform: rotateX(30deg) translateX(100px) translateY(100px) translateZ(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <p></p>
+    </div>
+</body>
+
+</html>

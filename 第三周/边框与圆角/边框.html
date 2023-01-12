@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>边框</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            border: 3px solid #333;
+            margin-bottom: 10px;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            border: 3px dotted #ddd;
+            margin-bottom: 10px;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            border: 3px dashed #ddd;
+            margin-bottom: 10px;
+        }
+
+        .box4 {
+            width: 200px;
+            height: 200px;
+            border-width: 3px;
+            border-style: dotted;
+            border-color: orange;
+        }
+
+        div {
+            float: left;
+        }
+
+        section {
+            float: left;
+            width: 160px;
+            height: 160px;
+            border: 8px solid #ccc;
+            margin-right: 10px;
+        }
+
+        section .spec {
+            border-color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">soild</div>
+    <div class="box2">dotted</div>
+    <div class="box3">dashed</div>
+    <div class="box4"></div>
+
+    <section></section>
+    <section></section>
+    <section class="spec"></section>
+    <section></section>
+    <section></section>
+</body>
+
+</html>

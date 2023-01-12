@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自由编程</title>
+    <style>
+        div {
+            float: left;
+            width: 25%;
+            height: 380px;
+        }
+
+        div img {
+            display: block;
+            height: 380px;
+            width: 100%;
+        }
+
+        .x {
+            position: relative;
+            line-height: 1.5;
+            color: #fff;
+            background: #07cbc9;
+        }
+
+        .x::before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+        }
+
+        .a::before {
+            border-right-color: #07cbc9;
+            left: -40px;
+        }
+
+        .b::before {
+            border-left-color: #07cbc9;
+            right: -40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="../素材/images/gugong.jpg">
+    </div>
+    <div class="x  a">
+    </div>
+    <div>
+        <img src="../素材/images/gugong.jpg">
+    </div>
+    <div class="x  a">
+    </div>
+    <div class="x  b">
+    </div>
+    <div>
+        <img src="../素材/images/gugong.jpg">
+    </div>
+    <div class="x  b">
+    </div>
+    <div>
+        <img src="../素材/images/gugong.jpg">
+    </div>
+</body>
+</body>
+
+</html>

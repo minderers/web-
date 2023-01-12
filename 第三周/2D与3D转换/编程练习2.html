@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            perspective: 300px;
+            position: relative;
+        }
+
+        .box p {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        .box p:nth-child(1) {
+            background-color: pink;
+            transform: rotateX(-90deg) translateZ(30px);
+            z-index: 99999;
+        }
+
+        .box p:nth-child(2) {
+            background-color: aquamarine;
+            transform: rotateX(-90deg) translateZ(50px);
+            z-index: 999;
+        }
+
+        .box p:nth-child(3) {
+            background-color: blue;
+            transform: rotateX(-90deg) translateZ(75px);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+</body>
+
+</html>
